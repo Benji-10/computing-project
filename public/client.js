@@ -122,7 +122,7 @@ rollDie = async (num) => {
     for (let i = 0; i < 30 + num * 3; i++) {
         var roll = Math.floor(Math.random() * 6) + 1;
         document.querySelector(`.dice${num}`).src = `Dice${roll}.png`;
-        // await sleep((i / 30) * 250);
+        await sleep((i / 30) * 250);
     }
     document.querySelector(`.dice${num}`).style.border = "solid gold 4px";
     document.querySelector(`.dice${num}`).style.transform = "translate(0px, -2px)";
@@ -145,7 +145,7 @@ check1 = async (turn) => {
                 info.textContent = "Checking score..."
                 break;
         }
-        // await sleep(500);
+        await sleep(500);
     }
 
     if (justRolledDouble) {
