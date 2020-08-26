@@ -1,0 +1,20 @@
+{
+  "name": "computing-project",
+  "version": "1.0.0",
+  "description": "Computing game for a computing project for computing class",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "computing",
+    "project",
+    "game"
+  ],
+  "author": "Ben Green",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
+}

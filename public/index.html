@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png">
+</head>
+
+<body>
+
+    <div class="log-in-screen">
+        <img class="image" src="28c856331b4ae6ce0f27dfb5671ba71e.gif" style="width:100%; height: 100%;">
+        <div class="field">
+            <div class="input">
+                <h4>Enter details here:</h4>
+                <div class="username">
+                    <label for="usernameInput">Username:</label>
+                    <input type="text" placeholder="Username" id="usernameInput" autocomplete="off" autofocus>
+                </div>
+                <div class="password">
+                    <label for="passwordInput">Password:</label>
+                    <input type="password" placeholder="Password" id="passwordInput">
+                </div>
+                <div class="button">
+                    <button class="submit">Submit</button>
+                </div>
+                <div class="error">
+                    <p id="error">Sorry, please try again</p>
+                </div>
+            </div>
+            <div class="lock"></div>
+        </div>
+    </div>
+
+    <div class="navbar">
+
+        <div class="nav-item play">
+            <i class="fas fa-dice"></i>
+            <a class="item-link" href="#">
+                <span class="link-text">Play</span>
+            </a>
+        </div>
+
+        <div class="nav-item leaderboard">
+            <i class="fas fa-medal"></i>
+            <a class="item-link" href="#">
+                <span class="link-text">Leaderboard</span>
+            </a>
+        </div>
+
+        <div class="nav-item log-in">
+            <i class="fas fa-sign-in-alt"></i>
+            <a class="item-link" href="#">
+                <span class="link-text">Log in</span>
+            </a>
+        </div>
+
+        <div class="nav-item rules">
+            <i class="fas fa-scroll"></i>
+            <a class="item-link" href="#">
+                <span class="link-text">Rules</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="scroll">
+        <div class="scrollpath"></div>
+        <div class="scrollbar"></div>
+        <div class="shine"></div>
+    </div>
+
+    <div class="content"></div>
+    <div class="parent">
+        <div class="board" style="border-radius: 20px;">
+            <h2 class="leaderheader" style="text-decoration-line: underline;">Leaderboard</h2>
+            <div class="tableDiv">
+                <table>
+                    <tr>
+                        <th>Place</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+    <script src="web.js"></script>
+
+</body>
+
+</html>
