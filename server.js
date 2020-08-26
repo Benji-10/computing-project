@@ -4,7 +4,7 @@ const datastore = require("nedb");
 const fs = require("fs");
 app.use(express.json());
 app.listen(9853, () => { console.log("listening at port 9853") });
-app.use(express.static("C:\\Users\\benja\\OneDrive\\Documents\\Node Projects\\Computing game\\public"));
+app.use(express.static("/public"));
 
 var users = fs.readFileSync("users.json");
 users = JSON.parse(users);
